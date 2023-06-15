@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+}
+
+.navBar{
+    background-color: rgb(214, 52, 30);
+}
+
+.navbar-expand .navbar-nav .nav-link {
+    color: white;
+}
+
+/**Acá voy a editar el componente Welcome.jsx**/
+.welcome{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-left: 1rem;
+}
+.hormigaFoto{
+    //width: 25rem;
+    //height: 17.625rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 55rem;
+}
+
+
+
+
+.welcomeContainer { 
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #F1F1F1;
+    width: 1850px;
+    height: 500px;
+    height: calc(100% - 500px);
+}
+
+
+.welcomeContainer::before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-attachment: fixed;
+    //background: 50%;
+    //background: url(/assets/img/hormigas-coloradas-logo.png);
+    background-position: 0% 0%, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+}
+
+
+.ropaCircular{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.seguinos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+}
+
+.facebookLogo{
+    width:40.56px;
+}
+/****************************************/
+
+
+
+/***Acá comienzo la edición del componente Carousel.jsx***/
+
+/**container, bottom y top**/
+.carouselContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.modaSustentable::before{
+    content: "Moda";
+    color: black;
+}
+
+.modaSustentable::after{
+    content: " sustentable";
+    font-weight: 700;
+    color: black;
+}
+
+#container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+  }
+  #container div {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+    background-image: url(/assets/img/hormigas-coloradas-bugs-bunny.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #container div.bottom {
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #container div.top {
+    -webkit-animation: anim 10s infinite alternate;
+    animation: change 10s infinite alternate;
+  }
+   @-webkit-keyframes change {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      background-image: url(/assets/img/hormigas-coloradas-remera-stich.png);
+    }
+    75% {
+      opacity: 1;
+      background-image: url(/assets/img/hormigas-coloradas-remera-verde.png);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /* @keyframes change {
+    0% {
+      opacity: 0;
+    }
+    36.36% {
+      opacity: 0;
+    }
+    63.63% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  } */
+
+
+
+  /**containerDos, bottomDos y topDos**/
+
+  #containerDos {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    padding-left: 1rem;
+  }
+  #containerDos div {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+    background-image: url(/assets/img/hormigas-coloradas-remera-motito-calavera.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #containerDos div.bottomDos {
+    opacity: 1;
+    background-image: url(/assets/img/hormigas-coloradas-short-jean-azul.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* #containerDos div.topDos {
+    -webkit-animation: change 10s infinite alternate;
+    animation: change 10s infinite alternate;
+  } */
+
+  #containerDos div.topDos {
+    -webkit-animation: anim 10s infinite alternate;
+    animation: anim 10s infinite alternate;
+  }
+  @-webkit-keyframes anim {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+      
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      background-image: url(/assets/img/hormigas-coloradas-saco-ochenta.png);
+    }
+  }
+
+  /* @keyframes change {
+    0% {
+      opacity: 0;
+    }
+    36.36% {
+      opacity: 0;
+    }
+    63.63% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  } */
