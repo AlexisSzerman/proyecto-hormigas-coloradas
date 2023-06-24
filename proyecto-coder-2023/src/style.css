@@ -1,147 +1,140 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-/*     font-size: 1.3rem; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  /*     font-size: 1.3rem; */
 }
 
-.navBar{
-    background-color: rgb(214, 52, 30);
+.navBar {
+  background-color: rgb(214, 52, 30);
 }
 
 .navbar-expand .navbar-nav .nav-link {
-    color: white;
+  color: white;
 }
 
 /**Acá voy a editar el componente Welcome.jsx**/
-.welcome{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 4rem;
-    padding-left: 1rem;
+.welcome {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 4rem;
+  padding-left: 1rem;
 }
-.hormigaFoto{
-    width: 25rem;
-    //height: 17.625rem;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 55rem;
-}
-
-
-
-
-.welcomeContainer { 
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    background-color: #F1F1F1;
-    width: 1850px;
-    height: 500px;
-    height: calc(100% - 500px);
+.hormigaFoto {
+  //width: 25rem;
+  //height: 17.625rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 55rem;
 }
 
+.welcomeContainer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 1850px;
+  height: 500px;
+  height: calc(100% - 500px);
+}
 
 .welcomeContainer::before {
-    content: '';
-    display: block;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background-attachment: fixed;
-    //background: 50%;
-    //background: url(/assets/img/hormigas-coloradas-logo.png);
-    background-position: 0% 0%, center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.1;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-attachment: fixed;
+  //background: 50%;
+  //background: url(/assets/img/hormigas-coloradas-logo.png);
+  background-position: 0% 0%, center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
 }
 
-
-.ropaCircular{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 1rem;
+.ropaCircular {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 1rem;
 }
 
-.seguinos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;   
+.seguinos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.facebookLogo{
-    width:40.56px;
+.facebookLogo {
+  width: 40.56px;
 }
 /****************************************/
-
-
 
 /***Acá comienzo la edición del componente Carousel.jsx***/
 
 /**container, bottom y top**/
-.carouselContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 5rem;
+.carouselContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 5rem;
 }
 
-.modaSustentable::before{
-    content: "Moda";
-    color: black;
+.modaSustentable::before {
+  content: "Moda";
+  color: black;
 }
 
-.modaSustentable::after{
-    content: " sustentable";
-    font-weight: 700;
-    color: black;
+.modaSustentable::after {
+  content: " sustentable";
+  font-weight: 700;
+  color: black;
 }
 
 #container {
-    position: relative;
-    width: 500px;
-    height: 500px;
-  }
-  #container div {
-    position: absolute;
-    width: 500px;
-    height: 500px;
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+#container div {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  opacity: 0;
+  background-image: url(/assets/img/hormigas-coloradas-bugs-bunny.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#container div.bottom {
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#container div.top {
+  -webkit-animation: anim 10s infinite alternate;
+  animation: change 10s infinite alternate;
+}
+@-webkit-keyframes change {
+  0% {
     opacity: 0;
-    background-image: url(/assets/img/hormigas-coloradas-bugs-bunny.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
   }
-  #container div.bottom {
+  50% {
     opacity: 1;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url(/assets/img/hormigas-coloradas-remera-stich.png);
   }
-  #container div.top {
-    -webkit-animation: anim 10s infinite alternate;
-    animation: change 10s infinite alternate;
+  75% {
+    opacity: 1;
+    background-image: url(/assets/img/hormigas-coloradas-remera-verde.png);
   }
-   @-webkit-keyframes change {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-      background-image: url(/assets/img/hormigas-coloradas-remera-stich.png);
-    }
-    75% {
-      opacity: 1;
-      background-image: url(/assets/img/hormigas-coloradas-remera-verde.png);
-    }
-    100% {
-      opacity: 1;
-    }
+  100% {
+    opacity: 1;
   }
-  /* @keyframes change {
+}
+/* @keyframes change {
     0% {
       opacity: 0;
     }
@@ -156,58 +149,55 @@
     }
   } */
 
+/**containerDos, bottomDos y topDos**/
 
-
-  /**containerDos, bottomDos y topDos**/
-
-  #containerDos {
-    position: relative;
-    width: 500px;
-    height: 500px;
-    padding-left: 1rem;
-  }
-  #containerDos div {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    opacity: 0;
-    background-image: url(/assets/img/hormigas-coloradas-remera-motito-calavera.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  #containerDos div.bottomDos {
-    opacity: 1;
-    background-image: url(/assets/img/hormigas-coloradas-short-jean-azul.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  /* #containerDos div.topDos {
+#containerDos {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  padding-left: 1rem;
+}
+#containerDos div {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  opacity: 0;
+  background-image: url(/assets/img/hormigas-coloradas-remera-motito-calavera.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#containerDos div.bottomDos {
+  opacity: 1;
+  background-image: url(/assets/img/hormigas-coloradas-short-jean-azul.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* #containerDos div.topDos {
     -webkit-animation: change 10s infinite alternate;
     animation: change 10s infinite alternate;
   } */
 
-  #containerDos div.topDos {
-    -webkit-animation: anim 10s infinite alternate;
-    animation: anim 10s infinite alternate;
+#containerDos div.topDos {
+  -webkit-animation: anim 10s infinite alternate;
+  animation: anim 10s infinite alternate;
+}
+@-webkit-keyframes anim {
+  0% {
+    opacity: 0;
   }
-  @-webkit-keyframes anim {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 0;
-      
-    }
-    75% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-      background-image: url(/assets/img/hormigas-coloradas-saco-ochenta.png);
-    }
+  50% {
+    opacity: 0;
   }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    background-image: url(/assets/img/hormigas-coloradas-saco-ochenta.png);
+  }
+}
 
-  /* @keyframes change {
+/* @keyframes change {
     0% {
       opacity: 0;
     }
@@ -224,18 +214,18 @@
 
 /* Seccion mapa y contacto */
 
-  span {
-   color: rgb(214, 52, 30);
-   font-weight: bold;
-  }
+span {
+  color: rgb(214, 52, 30);
+  font-weight: bold;
+}
 
-  .logo-whatsapp {
-    width: 1.3rem;
-  }
+.logo-whatsapp {
+  width: 1.3rem;
+}
 
-  p {
-    margin-bottom: 0 !important ; 
-  }
+p {
+  margin-bottom: 0 !important ;
+}
 /* Seccion horarios */
 
 .custom-gap > div {
@@ -244,7 +234,6 @@
 
 .bg-horarios {
   background-color: #7c7b7b3f;
-
 }
 
 .parent {
@@ -255,13 +244,27 @@
   grid-row-gap: 1.3rem;
 }
 
-.div1 { grid-area: 1 / 1 / 2 / 2; }
-.div2 { grid-area: 2 / 1 / 3 / 2; }
-.div3 { grid-area: 3 / 1 / 4 / 2; }
-.div4 { grid-area: 1 / 2 / 2 / 3; }
-.div5 { grid-area: 2 / 2 / 3 / 3; }
-.div6 { grid-area: 3 / 2 / 4 / 3; }
-.div7 { grid-area: 1 / 3 / 4 / 4; }
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.div2 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.div3 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.div4 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.div5 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.div6 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.div7 {
+  grid-area: 1 / 3 / 4 / 4;
+}
 
 .div2,
 .div3,
@@ -286,8 +289,8 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 6px; 
-  background-color: rgb(214, 52, 30); 
+  height: 6px;
+  background-color: rgb(214, 52, 30);
 }
 
 .div2,
@@ -295,13 +298,80 @@
 .div4,
 .div5,
 .div6 {
-
   height: 10rem; /* Adjust the height as desired */
 }
 .div-detail {
-display: flex;
-flex-direction: column;
-justify-content: center;
-height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70%;
   margin: 0;
+}
+
+
+/* Sección Sobre Nosotros */
+
+.nosotros-texto {
+text-align: justify;
+}
+
+/* Sección Footer */
+
+footer {
+  position: relative;
+  color: black;
+  font-weight: bolder;
+  padding: 5rem;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-container {
+  max-width: 35rem; 
+}
+
+.left-text {
+  text-align: left;
+  font-size: 3rem;
+  line-height: 1
+}
+
+.right-logo img {
+  max-height: 15rem;
+}
+
+
+/* Footer media queries */
+
+@media (max-width: 768px) {
+  footer {
+    padding: 2rem;
+  }
+
+  .left-container {
+    max-width: 25rem;
+  }
+
+  .left-text {
+    font-size: 1rem;
+  }
+
+  .right-logo img {
+    max-height: 5rem;
+  }
 }

@@ -787,7 +787,7 @@ const Nosotros = () => {
         </Col>
         <Col md={8}>
           <Card>
-            <Card.Body className="text-center fs-6">
+            <Card.Body className="fs-6 nosotros-texto">
               Hormigas coloradas es un emprendimiento de recirculación de ropa y
               objetos que nació en 2012 por una necesidad barrial. Comenzó en
               una plaza de la ciudad de Córdoba, pero en muy poco tiempo fue
