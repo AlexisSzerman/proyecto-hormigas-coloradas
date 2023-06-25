@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  /*     font-size: 1.3rem; */
+
 }
 
 .navBar {
@@ -374,4 +374,21 @@ footer {
   .right-logo img {
     max-height: 5rem;
   }
+}
+
+/* Boton WhatsApp */
+
+.logo-whatsapp-floating {
+  width: 2.5rem;
+}
+
+.whatsapp-floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+a {
+  text-decoration: none;
 }

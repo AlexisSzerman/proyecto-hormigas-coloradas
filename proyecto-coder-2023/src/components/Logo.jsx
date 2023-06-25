@@ -6,7 +6,7 @@ import Carousel from './Carousel';
 const Logo = () => {
   return (
     <>
-    <div className='welcomeContainer'>
+    <div className='container'>
         <div className="welcome">
             <img className="hormigaFoto" src={hormigaLogo} alt="" />
         </div>
@@ -16,7 +16,6 @@ const Logo = () => {
         <div className='seguinos'>
             <img className='facebookLogo' src={facebookLogo} alt="" /> &nbsp;Seguinos en <strong> &nbsp;Facebook</strong>
           </div>
-          <Carousel />
     </div>
     </>
   )

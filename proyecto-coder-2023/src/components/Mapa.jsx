@@ -6,8 +6,8 @@ const googleMapsEmbedCode =
 
 function Mapa() {
   return (
-    <Container className="mt-4">
-      <section>
+    <Container>
+      <section  className="mt-4" id="mapa">
         <p className="fs-3">
           Dónde <span className="fs-3" >encontrarnos</span>
         </p>

@@ -777,7 +777,7 @@ const Nosotros = () => {
   </svg>`;
 
   return (
-    <Container className="mt-4">
+    <Container className="mt-4" id="nosotros" >
       <Row>
         <Col md={4}>
           <div className="sobre-nosotros">

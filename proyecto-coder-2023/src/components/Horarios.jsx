@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 
 const Horarios = () => {
   return (
-    <Container className="bg-horarios py-4">
+    <Container className="bg-horarios py-4" id="horarios">
       <div className="parent">
         <div className="div1">
           <div className="title-horarios">

@@ -6,12 +6,12 @@ import { Link } from "react-router-dom";
 function ColorSchemesExample() {
   return (
     <>
-      <Navbar className='navBar'>
+      <Navbar className='navBar' id='navBar'>
         <Container>
           <Nav className="m-auto flex-grow-1 justify-content-evenly">
-            <Nav.Link href="#home">Sobre Nosotros</Nav.Link>
-            <Nav.Link href="#features">Horarios de atención</Nav.Link>
-            <Nav.Link href="#pricing">Ubicación</Nav.Link>
+            <Nav.Link href="#nosotros">Sobre Nosotros</Nav.Link>
+            <Nav.Link href="#horarios">Horarios de atención</Nav.Link>
+            <Nav.Link href="#mapa">Ubicación</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
