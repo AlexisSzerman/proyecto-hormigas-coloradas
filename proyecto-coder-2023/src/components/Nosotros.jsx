@@ -777,16 +777,16 @@ const Nosotros = () => {
   </svg>`;
 
   return (
-    <Container className="mt-4" id="nosotros" >
+    <Container className="mt-5" id="nosotros" >
       <Row>
         <Col md={4}>
           <div className="sobre-nosotros">
-            <h3 className="fs-3">Sobre <span className="fs-3">Nosotros</span></h3>
+            <h3>Sobre <span className="fs-3">Nosotros</span></h3>
           </div>
           <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
         </Col>
         <Col md={8}>
-          <Card>
+
             <Card.Body className="fs-6 nosotros-texto">
               Hormigas coloradas es un emprendimiento de recirculación de ropa y
               objetos que nació en 2012 por una necesidad barrial. Comenzó en
@@ -799,7 +799,7 @@ const Nosotros = () => {
               a la moda. También contamos con algunos productos nuevos, para tu
               uso cotidiano o para regalar.
             </Card.Body>
-          </Card>
+
         </Col>
       </Row>
     </Container>

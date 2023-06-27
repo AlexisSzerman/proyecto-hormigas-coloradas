@@ -298,7 +298,7 @@ p {
 .div4,
 .div5,
 .div6 {
-  height: 10rem; /* Adjust the height as desired */
+  height: 10rem; 
 }
 .div-detail {
   display: flex;
@@ -309,10 +309,69 @@ p {
 }
 
 
+ /* Horarios.css */
+.container-horarios {
+  background-color: #7c7b7b3f;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.card {
+  height: 100px;
+  background-color: #f9f9f9;
+  display: grid;
+  place-items: center;
+  transition: background-color 0.3s;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: rgb(214, 52, 30);
+}
+
+
+.card-hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.dia {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.horario {
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card.hovered .dia {
+  opacity: 0;
+}
+
+.card.hovered .horario {
+  opacity: 1;
+  text-align: center; 
+}
+
+
+
 /* Sección Sobre Nosotros */
 
 .nosotros-texto {
 text-align: justify;
+background-color:  #7c7b7b3f;
+border-radius: 0.5rem;
+padding: 2rem;
 }
 
 /* Sección Footer */
@@ -376,7 +435,7 @@ footer {
   }
 }
 
-/* Boton WhatsApp */
+/* Boton WhatsApp y Up */
 
 .logo-whatsapp-floating {
   width: 2.5rem;
