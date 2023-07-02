@@ -79,6 +79,7 @@
   flex-direction: row;
   justify-content: center;
   padding-top: 5rem;
+  margin-bottom: 10rem;
 }
 
 .modaSustentable::before {
@@ -167,7 +168,7 @@
 }
 #containerDos div.bottomDos {
   opacity: 1;
-  background-image: url(/assets/img/hormigas-coloradas-short-jean-azul.png);
+  background-image: url(/assets/img/hormigas-coloradas-short-jean-azul.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -444,4 +445,10 @@ footer {
 
 a {
   text-decoration: none;
+}
+
+/*Edición del logo.jsx*/
+
+.facebookTexto {
+  color: black;
 }
