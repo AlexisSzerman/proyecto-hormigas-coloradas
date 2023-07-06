@@ -11,7 +11,7 @@ const Footer = () => {
         />
         <div className="footer-content">
           <div className="left-container">
-            <div className="left-text mt-4">
+            <div className="left-text">
               {" "}
               <span>Reciclá</span> tu ropa y dale una nueva vida, ayudando al{" "}
               <span>ecosistema</span> y vistiendo a quienes más lo{" "}
@@ -26,10 +26,6 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-
-      <div className="d-flex m-3 justify-content-center">
-        <p className="mt-2" >Hormigas Coloradas 2023</p>
-      </div>
     </>
   );
 };

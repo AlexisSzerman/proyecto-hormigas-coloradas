@@ -313,6 +313,7 @@ p {
   background-color: #7c7b7b3f;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  margin-top: 2rem;
 }
 
 .card {
@@ -410,9 +411,30 @@ footer {
   max-height: 15rem;
 }
 
-/* Footer media queries */
+/* Media queries Footer/
 
-@media (max-width: 768px) {
+/* Dispositivos móviles */
+@media (max-width: 575.98px) {
+  footer {
+    padding: 2rem;
+  }
+
+  .left-container {
+    max-width: 20rem; 
+  }
+
+  .left-text {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem; 
+  }
+
+  .right-logo img {
+    max-height: 4rem; 
+  }
+}
+
+/* Tablets */
+@media (min-width: 576px) and (max-width: 991.98px) {
   footer {
     padding: 2rem;
   }
@@ -422,13 +444,15 @@ footer {
   }
 
   .left-text {
-    font-size: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 
   .right-logo img {
-    max-height: 5rem;
+    max-height: 10rem;
   }
 }
+
 
 /* Boton WhatsApp y Up */
 
