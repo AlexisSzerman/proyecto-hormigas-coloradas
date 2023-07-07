@@ -69,6 +69,20 @@
 .facebookLogo {
   width: 40.56px;
 }
+
+/*Edición del logo.jsx*/
+.facebookTexto {
+  display: flex;
+  flex-direction: row;
+  color: black;
+}
+
+.followUs {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.5rem;
+}
+
 /****************************************/
 
 /***Acá comienzo la edición del componente Carousel.jsx***/
@@ -420,16 +434,76 @@ footer {
   }
 
   .left-container {
-    max-width: 20rem; 
+    max-width: 20rem;
   }
 
   .left-text {
     font-size: 0.8rem;
-    margin-bottom: 0.5rem; 
+    margin-bottom: 0.5rem;
   }
 
   .right-logo img {
-    max-height: 4rem; 
+    max-height: 4rem;
+  }
+
+  /*Acá va lo del componente NavBar.jsx*/
+  .aboutUs {
+    font-size: 0.9rem;
+  }
+  .businessHours {
+    font-size: 0.9rem;
+  }
+  .location {
+    font-size: 0.9rem;
+  }
+  /*Acá va lo del componente Logo.jsx */
+  .hormigaFoto {
+    width: 15.625rem;
+    height: 15.625rem;
+  }
+  .ropaCircular h2 {
+    font-size: 1.2rem;
+  }
+  .facebookLogo {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 0.25rem;
+  }
+  .facebookTexto h3 {
+    font-size: 0.9rem;
+  }
+  /*Acá va lo del componente Carousel.jsx */
+  #container {
+    position: relative;
+    width: 7.8125rem;
+    height: 7.8125rem;
+  }
+  #container div {
+    position: absolute;
+    width: 7.8125rem;
+    height: 7.8125rem;
+  }
+  #containerDos {
+    position: relative;
+    width: 7.8125rem;
+    height: 7.8125rem;
+    padding-left: 1rem;
+  }
+  #containerDos div {
+    position: absolute;
+    width: 7.8125rem;
+    height: 7.8125rem;
+  }
+  /* #container div {
+    width: 7.8125rem;
+    height: 7.8125rem;
+  }
+  #containerDos div {
+    width: 7.8125rem;
+    height: 7.8125rem;
+  } */
+  .modaSustentable {
+    font-size: 1rem;
   }
 }
 
@@ -451,8 +525,48 @@ footer {
   .right-logo img {
     max-height: 10rem;
   }
+  /*Acá va lo del componente Logo.jsx */
+  .hormigaFoto {
+    width: 18.75rem;
+    height: 18.75rem;
+  }
+  .ropaCircular h2 {
+    font-size: 1.2rem;
+  }
+  .facebookLogo {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 0.25rem;
+  }
+  .facebookTexto h3 {
+    font-size: 0.9rem;
+  }
+  /*Acá va lo del componente Carousel.jsx */
+  #container {
+    position: relative;
+    width: 18.75rem;
+    height: 18.75rem;
+  }
+  #container div {
+    position: absolute;
+    width: 18.75rem;
+    height: 18.75rem;
+  }
+  #containerDos {
+    position: relative;
+    width: 18.75rem;
+    height: 18.75rem;
+    padding-left: 1rem;
+  }
+  #containerDos div {
+    position: absolute;
+    width: 18.75rem;
+    height: 18.75rem;
+  }
+  .modaSustentable {
+    font-size: 1.2rem;
+  }
 }
-
 
 /* Boton WhatsApp y Up */
 
@@ -469,10 +583,4 @@ footer {
 
 a {
   text-decoration: none;
-}
-
-/*Edición del logo.jsx*/
-
-.facebookTexto {
-  color: black;
 }

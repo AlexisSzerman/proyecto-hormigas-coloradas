@@ -15,7 +15,11 @@ const Logo = () => {
         </div>
         <div className="seguinos">
           <a href="https://www.facebook.com/hormigas.coloradas" target="_blank" className="facebookTexto">
-            <img className="facebookLogo" src={facebookLogo} /> &nbsp;Seguinos en <strong>Facebook</strong>
+            <img className="facebookLogo" src={facebookLogo} />
+            &nbsp;
+            <h3 className="followUs">
+              Seguinos en&nbsp; <strong>Facebook</strong>
+            </h3>
           </a>
         </div>
       </div>
