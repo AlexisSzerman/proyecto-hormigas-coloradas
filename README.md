@@ -32,4 +32,4 @@ A continuación, se detallan los pasos para instalar y ejecutar el proyecto:
 
 Si tienes alguna pregunta o comentario sobre este proyecto, no dudes en ponerte en contacto con nosotros. Puedes encontrarme en:
 
-- Correo Electrónico: [tunombre@correo.com](mailto:alexszer1986@gmail.com)
+- Correo Electrónico: [alexszer1986@gmail.com](mailto:alexszer1986@gmail.com)
